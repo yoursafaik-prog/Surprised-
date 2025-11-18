@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Relationship Launchpad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-image">
+                <img src="https://source.unsplash.com/featured/?couple,romantic" alt="Romantic couple image representing our launch">
+            </div>
+            <div class="hero-content">
+                <h1>Time Since Launch: <span id="timer" class="mono">61 Days, 0 Hours, 0 Minutes</span></h1>
+                <button class="cta-primary" onclick="scrollToMission()">Begin Our Mission 🚀</button>
+            </div>
+        </section>
+
+        <!-- Mission Log Timeline -->
+        <section id="timeline" class="timeline">
+            <h2>Mission Log: Our Journey So Far</h2>
+            <div class="timeline-container">
+                <div class="parallax-bg"></div>
+                <div id="timeline-entries" class="timeline-entries">
+                    <!-- Entries will be populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Secret Decryption Key -->
+        <section id="decryption" class="decryption">
+            <h2>The Secret Decryption Key</h2>
+            <p>Enter the special phrase to unlock a hidden message:</p>
+            <input type="text" id="password-input" placeholder="Your special phrase...">
+            <button onclick="checkPassword()">Decrypt</button>
+            <div id="hidden-letter" class="hidden-letter" style="display: none;">
+                <p>Dearest [Girlfriend's Name],</p>
+                <p>These 61 days have been the best launch of my life. From our first coffee shop meeting to now, you've been my co-pilot. Here's to many more missions together. I love you endlessly.</p>
+                <p>Yours forever,<br>[Your Name]</p>
+            </div>
+        </section>
+
+        <!-- Hall of Fame Compliment Generator -->
+        <section id="compliments" class="compliments">
+            <h2>Hall of Fame: Compliments for My Co-Pilot</h2>
+            <button onclick="generateCompliment()">Inspire Me</button>
+            <p id="compliment-display" class="compliment-text"></p>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+  </html>
+  
